@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{66CF07F3-331F-4A61-A9E0-3A3598AA37DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Airoport</RootNamespace>
+    <AssemblyName>Airoport</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AirportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AirportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chart.Designer.cs">
+      <DependentUpon>chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reqtable4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reqtable4.Designer.cs">
+      <DependentUpon>reqtable4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reqtable1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reqtable1.Designer.cs">
+      <DependentUpon>reqtable1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reqtable2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reqtable2.Designer.cs">
+      <DependentUpon>reqtable2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reqtable3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reqtable3.Designer.cs">
+      <DependentUpon>reqtable3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reqtable5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reqtable5.Designer.cs">
+      <DependentUpon>reqtable5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screen.Designer.cs">
+      <DependentUpon>screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="table2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="table2.Designer.cs">
+      <DependentUpon>table2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="table3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="table3.Designer.cs">
+      <DependentUpon>table3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="table4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="table4.Designer.cs">
+      <DependentUpon>table4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="table5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="table5.Designer.cs">
+      <DependentUpon>table5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="table6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="table6.Designer.cs">
+      <DependentUpon>table6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="table7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="table7.Designer.cs">
+      <DependentUpon>table7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="table8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="table8.Designer.cs">
+      <DependentUpon>table8.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart.resx">
+      <DependentUpon>chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reqtable4.resx">
+      <DependentUpon>reqtable4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reqtable1.resx">
+      <DependentUpon>reqtable1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reqtable2.resx">
+      <DependentUpon>reqtable2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reqtable3.resx">
+      <DependentUpon>reqtable3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reqtable5.resx">
+      <DependentUpon>reqtable5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screen.resx">
+      <DependentUpon>screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="table2.resx">
+      <DependentUpon>table2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="table3.resx">
+      <DependentUpon>table3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="table4.resx">
+      <DependentUpon>table4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="table5.resx">
+      <DependentUpon>table5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="table6.resx">
+      <DependentUpon>table6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="table7.resx">
+      <DependentUpon>table7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="table8.resx">
+      <DependentUpon>table8.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AirportDataSet.xsc">
+      <DependentUpon>AirportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AirportDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AirportDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AirportDataSet.xss">
+      <DependentUpon>AirportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="plane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plane11.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
